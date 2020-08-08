@@ -1,7 +1,31 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+a { 
+  text-decoration: none; /* Отменяем подчеркивание у ссылки */
+  color: #6BBDED;
+} 
+
+a:hover {
+  color: #6B3FC4;
+}
+
 .App {
   text-align: center;
 }
 
-.App-link {
-  color: #61dafb;
+.container {
+  max-width: 1100px;
+  margin: auto;
+  padding: 0 20px 20px 20px;
+}
+
+.title {
+  text-align: center;
+  font-size: 40px;
+  margin-bottom: 24px;
+  margin-top: 30px;
 }

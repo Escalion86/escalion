@@ -13,7 +13,7 @@
     color: white;
 }
 
-.title {
+.general-title {
     font-size: calc(40px + 2vmin);
     margin: 4px;
 }

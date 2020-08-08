@@ -1,15 +1,18 @@
-import React from 'react';
+import React, {Component} from 'react';
 import Header from './components/header';
+import PortfolioList from './components/portfolioList';
 
 
 import './App.css';
 
-function App() {
-  return (
-    <div className="App">
-      <Header />
-    </div>
-  );
-}
+export default class App extends Component {
 
-export default App;
+  render () {
+    return (
+      <div className="App">
+        <Header />
+        <PortfolioList />
+      </div>
+    );
+  }
+}
