@@ -6,16 +6,28 @@ import './portfolioList.css';
 export default class PortfolioList extends Component {
 	items = [
 		{
-			name: 'Breaking Bad', 
-			desc: 'Based on the movie Breaking Bad. For database API used https://www.breakingbadapi.com',
+			name: {
+				en: 'Breaking Bad', 
+				ru: 'Во все тяжкие'
+			},
+			desc: {
+				en: 'Based on the movie Breaking Bad. For database API used https://www.breakingbadapi.com',
+				ru: 'По мотивам фильма Во все тяжкие. В качестве источника данных используется API https://www.breakingbadapi.com'
+			},
 			screenshot: 'https://github.com/Escalion86/BreakingBad-Site/blob/master/screenshot.png?raw=true',
 			use: ['React', 'Axios'],
 			git: 'https://github.com/Escalion86/BreakingBad-Site',
 			link: 'http://breaking-bad.escalion.ru'
 		},
 		{
-			name: 'Game of Thrones', 
-			desc: 'Based on the movie Game of Thrones. For database API used https://www.anapioficeandfire.com',
+			name: { 
+				en: 'Game of Thrones', 
+				ru: 'Игра престолов' 
+			},
+			desc: {
+				en: 'Based on the movie Game of Thrones. For database API used https://www.anapioficeandfire.com',
+				ru: 'По мотивам фильма« Игра престолов ». В качестве источника данных используется API https://www.anapioficeandfire.com'
+			},
 			screenshot: 'https://github.com/Escalion86/GameOfThrones/blob/master/screenshot.png?raw=true',
 			use: ['React', 'Reactstrap'],
 			git: 'https://github.com/Escalion86/GameOfThrones',
@@ -24,12 +36,14 @@ export default class PortfolioList extends Component {
 	]
 
 	render() {
+		const {title} = this.props.content;
+		const language = this.props.language;
 		return (
 			<div className="container">
-				<h2 className="title">Portfolio</h2>
+				<h2 className="title">{title[language]}</h2>
 				<section className="cards">
 					{this.items.map((item) => {
-							return <PortfolioItem item={item} key={item.git} />
+							return <PortfolioItem language={language} content={this.props.content} item={item} key={item.git} />
 						})
 					}
 				</section>

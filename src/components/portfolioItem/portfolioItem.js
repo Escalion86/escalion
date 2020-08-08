@@ -4,8 +4,7 @@ import './portfolioItem.css';
 
 export default class PortfolioItem extends Component {
 	render() {
-		console.log(this.props);
-		const {item} = this.props;
+		const {item, language, content} = this.props;
 
 		return (
 			<div className='card'>
@@ -14,13 +13,13 @@ export default class PortfolioItem extends Component {
 				<img className="screenshot" src={item.screenshot} alt='' />
 			</div>
 			<div className='card-back'>
-				<h1>{item.name}</h1>
+				<h1>{item.name[language]}</h1>
 				<ul>
 					<li>
-						{item.desc}
+						{item.desc[language]}
 					</li>
 					<li>
-					<strong>Used: </strong>{item.use.join(', ')}
+					<strong>{content.used[language]}: </strong>{item.use.join(', ')}
 					</li>
 					{/* <li>
 						<strong>Preview:</strong> <a href={item.link} target="_blank" rel="noopener noreferrer">{item.link}</a>
