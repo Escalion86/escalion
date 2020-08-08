@@ -28,8 +28,8 @@ export default class PortfolioList extends Component {
 			<div className="container">
 				<h2 className="title">Portfolio</h2>
 				<section className="cards">
-					{this.items.map(item => {
-							return <PortfolioItem item={item} />
+					{this.items.map((item) => {
+							return <PortfolioItem item={item} key={item.git} />
 						})
 					}
 				</section>

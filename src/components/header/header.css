@@ -5,6 +5,9 @@
 
 .App-header {
     background-color: #282c34;
+    background:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../../img/cvbcvbvb.jpg');
+    background-repeat:no-repeat;
+    background-size:cover;
     min-height: 100vh;
     display: flex;
     flex-direction: column;

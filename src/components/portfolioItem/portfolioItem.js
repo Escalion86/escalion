@@ -4,6 +4,7 @@ import './portfolioItem.css';
 
 export default class PortfolioItem extends Component {
 	render() {
+		console.log(this.props);
 		const {item} = this.props;
 
 		return (
@@ -26,10 +27,10 @@ export default class PortfolioItem extends Component {
 					</li> */}
 					<li className="icons">
 						<a href={item.git} target="_blank" rel="noopener noreferrer" title="GitHub">
-							<i class="fab fa-git-square fa-2x"></i>
+							<i className="fab fa-git-square fa-2x"></i>
 						</a>
 						<a href={item.link} target="_blank" rel="noopener noreferrer" title="Site preview">
-							<i class="fas fa-globe fa-2x"></i>
+							<i className="fas fa-globe fa-2x"></i>
 						</a>
 					</li>
 				</ul>
