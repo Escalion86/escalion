@@ -45,7 +45,7 @@ export default class PortfolioList extends Component {
 				ru: 'Шаблон сайта по фитнесу о здоровом питании. Включает в себя: табы, форму обратной связи, калькулятор, интерактивную галерею и таймер'
 			},
 			screenshot: 'https://github.com/Escalion86/SiteFood/blob/master/screenshot.png?raw=true',
-			use: ['React', 'Reactstrap'],
+			use: ['Webpack', 'Json-server'],
 			git: 'https://github.com/Escalion86/SiteFood',
 			link: 'http://food.escalion.ru',
 			status: 'Complite'
