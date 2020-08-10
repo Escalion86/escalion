@@ -17,7 +17,8 @@ export default class PortfolioList extends Component {
 			screenshot: 'https://github.com/Escalion86/BreakingBad-Site/blob/master/screenshot.png?raw=true',
 			use: ['React', 'Axios'],
 			git: 'https://github.com/Escalion86/BreakingBad-Site',
-			link: 'http://breaking-bad.escalion.ru'
+			link: 'http://breaking-bad.escalion.ru',
+			status: 'Complite'
 		},
 		{
 			name: { 
@@ -31,7 +32,23 @@ export default class PortfolioList extends Component {
 			screenshot: 'https://github.com/Escalion86/GameOfThrones/blob/master/screenshot.png?raw=true',
 			use: ['React', 'Reactstrap'],
 			git: 'https://github.com/Escalion86/GameOfThrones',
-			link: 'http://got.escalion.ru'
+			link: 'http://got.escalion.ru',
+			status: 'In developing'
+		},
+		{
+			name: { 
+				en: 'Fitnes Food', 
+				ru: 'Еда для фитнеса' 
+			},
+			desc: {
+				en: 'Healthy eating fitness website template. Includes: tabs, feedback form, calculator, interactive gallery and timer',
+				ru: 'Шаблон сайта по фитнесу о здоровом питании. Включает в себя: табы, форму обратной связи, калькулятор, интерактивную галерею и таймер'
+			},
+			screenshot: 'https://github.com/Escalion86/SiteFood/blob/master/screenshot.png?raw=true',
+			use: ['React', 'Reactstrap'],
+			git: 'https://github.com/Escalion86/SiteFood',
+			link: 'http://food.escalion.ru',
+			status: 'Complite'
 		}
 	]
 
