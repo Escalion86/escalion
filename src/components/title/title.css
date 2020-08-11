@@ -4,10 +4,10 @@
 }
 
 .App-title {
-    background-color: #282c34;
+    /* background-color: #282c34;
     background:  linear-gradient(rgba(0,0,0,.5), rgba(0,0,0,.5)), url('../../img/cvbcvbvb.jpg');
     background-repeat:no-repeat;
-    background-size:cover;
+    background-size:cover; */
     min-height: 100vh;
     display: flex;
     flex-direction: column;
@@ -24,4 +24,9 @@
 .subtitle {
     font-size: calc(16px + 2vmin);
     margin: 4px;
+}
+
+.custom-bg {
+    padding-top: 22vh;
+    min-height: 100vh;
 }
