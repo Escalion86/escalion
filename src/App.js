@@ -14,6 +14,16 @@ export default class App extends Component {
 
   content = {
     header: {
+      home: {
+        en: 'Home',
+        ru: 'Главная'
+      },
+      portfolio: {
+        en: 'Portfolio',
+        ru: 'Портфолио'
+      }
+    },
+    title: {
       devName: {
         en: 'Aleksei Belinskiy',
         ru: 'Алексей Белинский'
@@ -46,9 +56,10 @@ export default class App extends Component {
       <div className="App">
         <Header         
            switchLanguage={this.switchLanguage}
+           content={this.content.header} 
            language={this.state.language} />
         <Title 
-          content={this.content.header} 
+          content={this.content.title} 
           language={this.state.language} />
         <PortfolioList
           content={this.content.portfolio} 
