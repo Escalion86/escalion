@@ -32,6 +32,9 @@ header ul {
 header ul li {
     position: relative;
     list-style: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 header ul li a {

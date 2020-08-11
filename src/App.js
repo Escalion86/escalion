@@ -35,12 +35,24 @@ export default class App extends Component {
     }
   };
 
+  switchLanguage = () => {
+    this.setState({
+      language: this.state.language === 'ru' ? 'en' : 'ru'
+    })
+  }
+
   render () {
     return (
       <div className="App">
-        <Header />
-        <Title content={this.content.header} language={this.state.language} />
-        <PortfolioList content={this.content.portfolio} language={this.state.language} />
+        <Header         
+           switchLanguage={this.switchLanguage}
+           language={this.state.language} />
+        <Title 
+          content={this.content.header} 
+          language={this.state.language} />
+        <PortfolioList
+          content={this.content.portfolio} 
+          language={this.state.language} />
       </div>
     );
   }
