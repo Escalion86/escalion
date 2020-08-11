@@ -30,7 +30,7 @@ export default class PortfolioList extends Component {
 				ru: 'По мотивам фильма« Игра престолов ». В качестве источника данных используется API https://www.anapioficeandfire.com'
 			},
 			screenshot: 'https://github.com/Escalion86/GameOfThrones/blob/master/screenshot.png?raw=true',
-			use: ['React', 'Reactstrap'],
+			use: ['React', 'Redux', 'React-router', 'Reactstrap'],
 			git: 'https://github.com/Escalion86/GameOfThrones',
 			link: 'http://got.escalion.ru',
 			status: 'In developing'

@@ -15,11 +15,11 @@ export default class PortfolioItem extends Component {
 			<div className='card-back'>
 				<h1>{item.name[language]}</h1>
 				<ul>
-					<li>
+					<li className="card-desc">
 						{item.desc[language]}
 					</li>
 					<li>
-					<strong>{content.used[language]}: </strong>{item.use.join(', ')}
+					<strong>{content.used[language]}: </strong><div>{item.use.join(', ')}</div>
 					</li>
 					{/* <li>
 						<strong>Preview:</strong> <a href={item.link} target="_blank" rel="noopener noreferrer">{item.link}</a>

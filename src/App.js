@@ -28,8 +28,8 @@ export default class App extends Component {
         ru: 'Портфолио'
       },
       used: {
-        en: 'Used',
-        ru: 'Использовалось'
+        en: 'Libraries used',
+        ru: 'Используемые библиотеки'
       }
     }
   };
