@@ -1,5 +1,6 @@
 import React, {Component} from 'react';
 import Header from './components/header';
+import Title from './components/title';
 import PortfolioList from './components/portfolioList';
 
 
@@ -37,7 +38,8 @@ export default class App extends Component {
   render () {
     return (
       <div className="App">
-        <Header content={this.content.header} language={this.state.language} />
+        <Header />
+        <Title content={this.content.header} language={this.state.language} />
         <PortfolioList content={this.content.portfolio} language={this.state.language} />
       </div>
     );

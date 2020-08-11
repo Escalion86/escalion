@@ -26,9 +26,16 @@
     -->
     <title>Escalion Developer</title>
     <script src="https://kit.fontawesome.com/873f3b498d.js" crossorigin="anonymous"></script>
+    <script defer type="text/javascript">
+				window.addEventListener('scroll', function() {
+          var header = document.querySelector('header');
+          header.classList.toggle('sticky', window.scrollY > 0);
+        })
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
+    <p><a name="home"></a></p>
     <div id="root"></div>
     <!--
       This HTML file is a template.
