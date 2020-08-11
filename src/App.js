@@ -9,7 +9,7 @@ import './App.css';
 export default class App extends Component {
 
   state = {
-    language: 'ru'
+    language: 'en'
   };
 
   content = {
@@ -44,6 +44,22 @@ export default class App extends Component {
       }
     }
   };
+
+  componentDidMount() {
+    this.checkUserCountry();
+  }
+
+  checkUserCountry = () => {
+    fetch('https://ipinfo.io/json?token=b2775fc00c2c90')
+      .then((response) => {
+        return response.json();
+      })
+      .then((json) => {
+          this.setState({
+            language: ['RU'].includes(json.country) ? 'ru' : 'en'
+          })
+      });
+  }
 
   switchLanguage = () => {
     this.setState({
