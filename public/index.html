@@ -32,10 +32,25 @@
           header.classList.toggle('sticky', window.scrollY > 0);
         })
     </script>
+    <script defer type="text/javascript">
+      const anchors = document.querySelectorAll('a[href*="#"]')
+
+      for (let anchor of anchors) {
+        anchor.addEventListener('click', function (e) {
+          e.preventDefault()
+          
+          const blockID = anchor.getAttribute('href').substr(1)
+          
+          document.getElementById(blockID).scrollIntoView({
+            behavior: 'smooth',
+            block: 'start'
+          })
+        })
+      }
+    </script>
   </head>
   <body>
     <noscript>You need to enable JavaScript to run this app.</noscript>
-    <p><a name="home"></a></p>
     <div id="root"></div>
     <!--
       This HTML file is a template.

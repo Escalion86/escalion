@@ -56,8 +56,7 @@ export default class PortfolioList extends Component {
 		const {title} = this.props.content;
 		const language = this.props.language;
 		return (
-			<section className="container">
-				<p><a name="portfolio"></a></p>
+			<section id="portfolio" className="container">
 				<h2 className="title">{title[language]}</h2>
 				<div className="cards">
 					{this.items.map((item) => {

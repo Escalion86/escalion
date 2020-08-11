@@ -9,7 +9,7 @@ export default class Title extends Component {
 		const language = this.props.language;
 
 		return (
-			<section className="App-title">
+			<section id="home" className="App-title">
 				<img src={logo} className="App-logo" alt="logo" />
 				<h1 className="general-title">
 					{devName[language]}
