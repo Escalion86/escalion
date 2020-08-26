@@ -49,6 +49,21 @@ export default class PortfolioList extends Component {
 			git: 'https://github.com/Escalion86/SiteFood',
 			link: 'http://food.escalion.ru',
 			status: 'Complite'
+		},
+		{
+			name: { 
+				en: 'Picso', 
+				ru: 'Picso' 
+			},
+			desc: {
+				en: 'Diploma project for the course "Java Script from zero" on https://SkillBox.ru. API https://unsplash.com is used as a data source',
+				ru: 'Дипломный проект по курсу "Java Script с нуля" на https://SkillBox.ru. В качестве источника данных используется API https://unsplash.com'
+			},
+			screenshot: 'https://github.com/Escalion86/Unsplash/blob/master/screenshot.png?raw=true',
+			use: ['React', 'Redux', 'React-router'],
+			git: 'https://github.com/Escalion86/Unsplash',
+			link: 'http://picso.escalion.ru',
+			status: 'In developing'
 		}
 	]
 
