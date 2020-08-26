@@ -11,8 +11,8 @@ export default class PortfolioList extends Component {
 				ru: 'Во все тяжкие'
 			},
 			desc: {
-				en: 'Based on the movie Breaking Bad. For database API used https://www.breakingbadapi.com',
-				ru: 'По мотивам фильма Во все тяжкие. В качестве источника данных используется API https://www.breakingbadapi.com'
+				en: 'Based on the movie «Breaking Bad». For database API used https://www.breakingbadapi.com',
+				ru: 'По мотивам фильма «Во все тяжкие». В качестве источника данных используется API https://www.breakingbadapi.com'
 			},
 			screenshot: 'https://github.com/Escalion86/BreakingBad-Site/blob/master/screenshot.png?raw=true',
 			use: ['React', 'Axios'],
@@ -26,8 +26,8 @@ export default class PortfolioList extends Component {
 				ru: 'Игра престолов' 
 			},
 			desc: {
-				en: 'Based on the movie Game of Thrones. For database API used https://www.anapioficeandfire.com',
-				ru: 'По мотивам фильма« Игра престолов ». В качестве источника данных используется API https://www.anapioficeandfire.com'
+				en: 'Based on the movie «Game of Thrones». For database API used https://www.anapioficeandfire.com',
+				ru: 'По мотивам фильма «Игра престолов». В качестве источника данных используется API https://www.anapioficeandfire.com'
 			},
 			screenshot: 'https://github.com/Escalion86/GameOfThrones/blob/master/screenshot.png?raw=true',
 			use: ['React', 'Redux', 'React-router', 'Reactstrap'],
